@@ -22,12 +22,7 @@ static func shallow_merge(src_dict: Dictionary, dest_dict: Dictionary) -> Dictio
 
 
 # Percorre todos os indices de: data e retorna o seu respectivo identificador quando verdadeiro.
-# data: Array de objetos a serem percorridos.
-# where: Representa a chave onde sera feito a busca.
-# search: Representa o valor esperado.
-# mode: Representa a quantidade de dados esperado. por padrao, e retornado um unico indentificador.
-# like: Define o tipo de precisao da consulta. por padrao, a consulta e de precisao.
-static var find := func(
+static func find(
 	data: Array,
 	where: String,
 	search: Variant,
